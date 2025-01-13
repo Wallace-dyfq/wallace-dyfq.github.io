@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Add a plain CSS file: see https://trunkrs.dev/assets/#css -->
+  <!-- If using Tailwind with Leptos CSR, see https://trunkrs.dev/assets/#tailwind instead-->
+  <link rel="stylesheet" href="/styles-b69b4a6daea94e63.css" integrity="sha384&#x2D;jI2&#x2B;cfHAHSU3alWzTOHLRNwFZqaeuLkyMXhXg3fzreXVHddBjIkygtOVucMnGAE2"/>
+
+  <!-- Include favicon in dist output: see https://trunkrs.dev/assets/#icon -->
+  <link rel="icon" href="/favicon-e9cbd8f50cc65bf2.ico" integrity="sha384&#x2D;YobgLXwtz0GhXVUTHml49p32guapVFlEG8UpQdDVN3kekOqkQi&#x2B;qSXEpwp&#x2B;yM4BW"/>
+
+  <!-- include support for `wasm-bindgen --weak-refs` - see: https://rustwasm.github.io/docs/wasm-bindgen/reference/weak-references.html -->
+  
+<script type="module" nonce="gKP2oX7RESlfniS0vUHkYg==">
+import init, * as bindings from '/simple_math_leptos-c790104f25330b1c.js';
+const wasm = await init({ module_or_path: '/simple_math_leptos-c790104f25330b1c_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script>
+<link rel="modulepreload" href="/simple_math_leptos-c790104f25330b1c.js" crossorigin=anonymous integrity="sha384-Rpy1/JxaaTFgAFt2Vk0vT7BTB68aqE6ETjSv3pXnDgfFzBJjz9t3S6yXZCmiQajb"><link rel="preload" href="/simple_math_leptos-c790104f25330b1c_bg.wasm" crossorigin=anonymous integrity="sha384-+y1WPxIgTOYgd7xQfOTidbV0leXr3h+bZXQzj7Yhm0j4vbub0y4qnGnRWTw4ov0b" as="fetch" type="application/wasm"></head>
+
+<body></body>
+
+</html>
